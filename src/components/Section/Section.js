@@ -1,8 +1,9 @@
 import propTypes from "prop-types";
+import s from "../Section/Section.module.css";
 
 export function Section({ title, children }) {
   return (
-    <section>
+    <section className={s.container}>
       <h2>{title}</h2>
       {children}
     </section>
